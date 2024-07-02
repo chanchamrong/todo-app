@@ -1,0 +1,11 @@
+services:
+  nextjs-app:
+    image: chanchamrongsong/todo-app:latest
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+    restart: always
+
+volumes:
+  nextjs_data:
