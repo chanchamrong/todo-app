@@ -1,3 +1,5 @@
+import { v4 as uuidv4 } from 'uuid';
+
 function Form({ todos, setTodos }) {
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -5,7 +7,7 @@ function Form({ todos, setTodos }) {
     const value = event.target.todo.value;
     const newTodo = {
       title: value,
-      id: self.crypto.randomUUID(),
+      id: uuidv4(),
       is_completed: false,
     };
 
