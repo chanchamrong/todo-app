@@ -1,6 +1,6 @@
 services:
   nextjs-app:
-    image: chanchamrongsong/todo-app:latest
+    image: registry.digitalocean.com/chamrong-container/todo-app:latest
     ports:
       - "3000:3000"
     environment:
